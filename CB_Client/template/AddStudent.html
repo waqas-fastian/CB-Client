@@ -1,0 +1,65 @@
+{% load static %}
+<html>
+<head>
+<title>Add New Student</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="{% static "css/style.css" %}"/>
+<script src="{% static "js/AddStudentController.js" %}"></script>
+
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="LoginCtrl">
+        <div class="row busy-indicator">
+            <form class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4" action="/SaveNewStudent/" method="post">
+                {% csrf_token %}
+                <h2 class="text-center">ADD USER</h2>
+                <div class="form-box">
+                    <div class="form-group">
+                        <input ng-model="FirstName" name="FirstName" type="text" class="form-control" placeholder="FirstName" required />
+                        <span style="color:red" ng-show="loginForm.FirstName.$dirty && loginForm.FirstName.$invalid">
+                            <span ng-show="loginForm.FirstName.$error.required">First Name is required.</span>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <input ng-model="LastName" name="LastName" type="text" class="form-control" placeholder="LastName" required />
+                        <span style="color:red" ng-show="loginForm.LastName.$dirty && loginForm.LastName.$invalid">
+                            <span ng-show="loginForm.LastName.$error.required">Last Name is required.</span>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <input ng-model="Age" name="Age" type="text" class="form-control" placeholder="Age" required />
+                        <span style="color:red" ng-show="loginForm.Age.$dirty && loginForm.Age.$invalid">
+                            <span ng-show="loginForm.Age.$error.required">Age is required.</span>
+                        </span>
+                    </div>                    
+                    <div class="form-group">
+                        <input ng-model="Gender" name="Gender" type="text" class="form-control" placeholder="Gender" required />
+                        <span style="color:red" ng-show="loginForm.Gender.$dirty && loginForm.Gender.$invalid">
+                            <span ng-show="loginForm.Gender.$error.required">Gender is required.</span>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <input ng-model="ClassId" name="ClassId" type="text" class="form-control" placeholder="ClassId" required />
+                        <span style="color:red" ng-show="loginForm.ClassId.$dirty && loginForm.ClassId.$invalid">
+                            <span ng-show="loginForm.ClassId.$error.required">ClassId is required.</span>
+                        </span>
+                    </div>                    
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="submit" ng-disabled="loginForm.FirstName && loginForm.FirstName.$invalid ||
+                        loginForm.LastName && loginForm.LastName.$invalid || loginForm.Age && loginForm.Age.$invalid || loginForm.Gender && loginForm.Gender.$invalid ||
+                         loginForm.ClassId && loginForm.ClassId.$invalid" disabled>
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+</div>
+
+</body>
+</html>

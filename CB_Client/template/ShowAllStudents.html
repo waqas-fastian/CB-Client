@@ -1,0 +1,46 @@
+{% load static %}
+<html>
+<head>
+<title>Data List</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="{% static "css/style.css" %}"/>
+<script type="text/javascript" src="{% static "js/ShowAllStudentsController.js" %}"></script>
+
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="LoginCtrl">
+        <div class="table-responsive">
+                    <table class="table" >                        
+                        <thead><tr style="background-color: #4CAF50; color: white;">
+                                <th>ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Class</th>
+                                <th colspan="2">Action</th>
+                        </tr></thead>
+                        <tbody ng-repeat="user in UserList">                            
+                           <tr>
+                                <td>{[{ user.Id }]}</td>
+                                <td>{[{ user.FirstName }]}</td>
+                                <td>{[{ user.LastName }]}</td>
+                                <td>{[{ user.Age }]}</td>
+                                <td>{[{ user.Gender }]}</td>
+                                <td>{[{ user.ClassName }]}</td>
+                                <td><button type="submit" value="Edit" ng-click="#">Edit</button></td>
+                                <td><button type="submit" value="Delete" ng-click="#">Delete</button></td>
+                           </tr>                        
+                        </tbody>
+                    </table>
+          </div>           
+     </div>
+</body>
+
+</html>

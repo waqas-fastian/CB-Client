@@ -1,0 +1,388 @@
+﻿#header{
+    background: #2B5C9F;
+    color: #FFFFFF;
+    height: 50px;
+    width: 100%;
+}
+
+#app_name{
+    float:left;
+    margin-left: 20px;
+}
+
+body{
+    background: #D7D7E5;
+    font-family:sans-serif;
+    color: #39555D;
+}
+
+#login_strip{
+    height: 15px;
+    width: 100%;
+    background: #949290;
+    border: 1px;
+    border-color: #FFFFFF;
+}
+
+#track_form{
+    margin-left: 20%;
+    
+}
+
+#track_form tr td{
+    padding: 8px;
+}
+
+#track_form tr td input[type=text]{
+    height: 20px;
+}
+
+#track_form tr td input[type=button]{
+    height: 30px;   
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+#title{
+    margin-left: 38%;
+}
+
+#Container img{
+    height: 25px;
+    width:25px;
+}
+
+.result_table tr td{
+    border-bottom: 1px solid #949290;
+    padding: 15px;
+    text-align: left;
+}
+
+.result_table{
+    width: 94%;
+    background: #FFFFFF;
+/*    float: left;*/
+    margin-top: 20px;
+/*    margin-left: 18%;*/
+}
+
+.result_sub_table{
+    width: 90%;
+    background: #FFFFFF;
+    float: left;
+    margin-top: 20px;
+    margin-left: 4%;
+}
+
+.result_sub_table tr td{
+    border-bottom: 1px solid #949290;
+    padding: 5px;
+    text-align: center;
+    width: auto;
+}
+
+.field_name{
+    font-weight: bold;
+}
+
+.form_style{
+    background: #FFFFFF;
+    width: 35%;
+    float: left;
+    margin-left: 400px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.sls-button{
+   margin-top: 25px;
+    margin-right: 250px;
+    float: right;
+}
+
+.bts-login{
+    width: 40%;
+    margin-top: 10%;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 10px  grey;
+}
+
+.bts-login h2{
+    margin-left: 40%;
+}
+
+.busy-image{
+    height:10%;
+    width:10%;
+    float:left;
+}
+
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #252839/*#000*/;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #b5b5b7/*#999999*/;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color:#b5b5b7 /*#999999*/;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+
+.mid-panel{
+    margin-top:5%;
+}
+
+.header-strip{
+        height: 6px;
+    float: left;
+    width: 100%;
+    background-color:#f2b632;
+}
+
+.custom-form-group{
+    margin-top: 10px;
+    margin-right:5px;
+}
+
+.custom-form-control{
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555555;
+    vertical-align: middle;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.custom-radio{
+        /* margin-left: 0px; */
+    /* display: block; */
+    width: 100%;
+    /* height: 34px; */
+    /* padding: 6px 12px; */
+    /* font-size: 14px; */
+    /* line-height: 1.428571429; */
+    /* color: #555555; */
+    vertical-align: middle;
+    /* background-color: #ffffff; */
+    /* background-image: none; */
+    /* border: 1px solid #cccccc; */
+    /* border-radius: 4px; */
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); */
+    /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); */
+    /* -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; */
+    /* transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; */
+}
+.custom-weight-unit-combobox{
+    width:80px;
+}
+
+.custom-numeric-textbox{
+    width:80px;
+}
+
+#dayType{
+    /*float:right;*/
+}
+
+.waiting-box {
+    display: block;
+    position: fixed; /* fixed position so it doesn't scroll */
+    z-index: 9999; /* on top of everything else */
+    width: 250px;
+    margin-left: -125px; /* horizontally centered */
+    left: 50%;
+    top: 10px; /* displayed on the top of the page, just like Gmail's yellow info-box */
+    height: 60px;
+    padding: 10px;
+    background-color: #f3e9b5;
+    border-radius: 4px;
+}
+
+.datepickerdemoBasicUsage {
+  /** Demo styles for mdCalendar. */ }
+  .datepickerdemoBasicUsage md-content {
+    padding-bottom: 200px; }
+  .datepickerdemoBasicUsage .validation-messages {
+    font-size: 11px;
+    color: darkred;
+    margin: 10px 0 0 25px; }
+
+
+  .busy-modal
+        {
+            position: fixed;
+            z-index: 999;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: Black;
+            filter: alpha(opacity=60);
+            opacity: 0.6;
+            -moz-opacity: 0.8;
+        }
+        .busy-center
+        {
+            z-index: 1000;
+            margin: 300px auto;
+            padding: 10px;
+            width: 130px;
+            background-color: White;
+            border-radius: 10px;
+            filter: alpha(opacity=100);
+            opacity: 1;
+            -moz-opacity: 1;
+        }
+        .busy-center img
+        {
+            height: 128px;
+            width: 128px;
+        }
+
+.cn-configuration {
+    width:18%;
+}
+
+
+.price-modifier-table {
+    width: 80%;
+    margin-left: 3%;
+}
+
+.price-modifier-table th, td{
+    text-align:center;
+}
+
+.cal-base {
+margin-left:10px;
+}
+
+input[type="text"]:disabled, input[type = "number"]:disabled, select:disabled {
+    background-color:rgb(235, 235, 228);
+}
